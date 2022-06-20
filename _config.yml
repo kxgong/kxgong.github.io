@@ -1,10 +1,10 @@
 # Site settings
-title:       Binhui Xie
-email:       binhuixie@bit.edu.cn
-author:      Binhui Xie
-description: "Binhui Xie's personal website."
+title:       Kaixiong Gong
+email:       kxgong@bit.edu.cn
+author:      Kaixiong Gong
+description: "Kaixiong Gong's personal website."
 baseurl:     ""
-url:         "http://binhuixie.github.io"
+url:         "http://kxgong.github.io"
 date_format: "%b %-d, %Y"
 
 # Google services
