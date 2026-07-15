@@ -1,5 +1,5 @@
 name: Deploy site
-
+# Trigger rebuild after socials fix
 on:
   push:
     branches:
