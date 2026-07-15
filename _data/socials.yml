@@ -1,0 +1,7 @@
+# this file contains the social media links and usernames of the author
+# the socials will be displayed in the order they are defined here
+cv_pdf: /assets/pdf/CV.pdf # path to your CV PDF file
+email: kaixionggong@gmail.com # your email address
+github: kxgong # your GitHub username
+scholar_userid: kBVshUUAAAAJ # your Google Scholar ID
+rss_icon: true # comment this line to hide the RSS icon
