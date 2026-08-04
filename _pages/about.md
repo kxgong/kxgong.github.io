@@ -83,23 +83,11 @@ My research interests lie in **AR generative models** for video generation and *
   <div class="timeline-entry">
     <div class="entry-row">
       <div class="entry-name">The Chinese University of Hong Kong</div>
-      <div class="entry-meta">08/2023 - 06/2027 (Expected)<br>Hong Kong</div>
+      <div class="entry-meta">Sep. 2023 - Present<br>Hong Kong, China</div>
     </div>
-    <div class="entry-subtitle">PhD in Department of Information Engineering (MMLab)</div>
-    <div class="entry-description">Advisor: <a href="http://people.eecs.berkeley.edu/~xyyue/">Prof. Xiangyu Yue</a></div>
+    <div class="entry-subtitle">Ph.D. in MMLAB (Information Engineering)</div>
+    <div class="entry-description">Supervisor: <a href="http://people.eecs.berkeley.edu/~xyyue/">Prof. Xiangyu Yue</a></div>
     <div class="entry-description"><strong>Research Topics:</strong> Multi-modal Learning, Generative Models</div>
-  </div>
-
-  <hr class="entry-divider">
-
-  <div class="timeline-entry">
-    <div class="entry-row">
-      <div class="entry-name">Beijing Institute of Technology</div>
-      <div class="entry-meta">09/2019 - 06/2023<br>Beijing</div>
-    </div>
-    <div class="entry-subtitle">Bachelor in Artificial Intelligence</div>
-    <div class="entry-description">36th XuTeLi Scholarship (Top 10/8000+)</div>
-    <div class="entry-description">National Scholarship, Ministry of Education of China (Top 2%, 2021)</div>
   </div>
 </section>
 
