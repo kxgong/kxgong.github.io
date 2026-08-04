@@ -83,10 +83,10 @@ al_folio:
 
 navbar_fixed: true
 footer_fixed: true
-search_enabled: true
-socials_in_search: true
-posts_in_search: true
-bib_search: true
+search_enabled: false
+socials_in_search: false
+posts_in_search: false
+bib_search: false
 
 # Dimensions
 max_width: 930px
@@ -453,7 +453,7 @@ enable_cookie_consent: false # enables GDPR-compliant cookie consent dialog (htt
 enable_masonry: true # enables automatic project cards arrangement
 enable_math: true # enables math typesetting (uses MathJax)
 enable_tooltips: false # enables automatic tooltip links generated for each section titles on pages and posts
-enable_darkmode: true # enables switching between light/dark modes
+enable_darkmode: false # keep the single-page navbar limited to the six section links
 enable_navbar_social: false # enables displaying social links in the navbar on the about page
 enable_project_categories: true # enables categorization of projects into multiple categories
 enable_medium_zoom: true # enables image zoom feature (as on medium.com)

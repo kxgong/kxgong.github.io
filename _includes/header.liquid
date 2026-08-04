@@ -37,24 +37,6 @@
           <li class="nav-item"><a class="nav-link single-page-nav-link" href="{{ '/' | relative_url }}#education" data-section="education">Education</a></li>
           <li class="nav-item"><a class="nav-link single-page-nav-link" href="{{ '/' | relative_url }}#research" data-section="research">Research</a></li>
           <li class="nav-item"><a class="nav-link single-page-nav-link" href="{{ '/' | relative_url }}#services" data-section="services">Services</a></li>
-
-          {% if site.search_enabled %}
-            <li class="nav-item">
-              <button id="search-toggle" type="button" title="Search" aria-label="Open search">
-                <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span>
-              </button>
-            </li>
-          {% endif %}
-
-          {% if site.enable_darkmode %}
-            <li class="toggle-container">
-              <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme">
-                <i class="fa-half-sun-moon" id="light-toggle-system"></i>
-                <i class="fa-solid fa-moon" id="light-toggle-dark"></i>
-                <i class="fa-solid fa-sun" id="light-toggle-light"></i>
-              </button>
-            </li>
-          {% endif %}
         </ul>
       </div>
     </div>
