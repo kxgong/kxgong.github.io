@@ -97,7 +97,7 @@ My research interests lie in **AR generative models** for video generation and *
       <div class="entry-name">Beijing Institute of Technology</div>
       <div class="entry-meta">2020 - 2023<br>Beijing, China</div>
     </div>
-    <div class="entry-subtitle">Master's Degree</div>
+    <div class="entry-subtitle">Master's Degree in Computer Science</div>
     <div class="entry-description"><strong>Honor:</strong> National Scholarship, Ministry of Education of China (2021)</div>
   </div>
 
@@ -108,7 +108,7 @@ My research interests lie in **AR generative models** for video generation and *
       <div class="entry-name">Beijing Institute of Technology</div>
       <div class="entry-meta">2016 - 2020<br>Beijing, China</div>
     </div>
-    <div class="entry-subtitle">Bachelor's Degree</div>
+    <div class="entry-subtitle">Bachelor's Degree in Software Engineering</div>
   </div>
 </section>
 
