@@ -1,0 +1,105 @@
+<header>
+  <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
+    <div class="container">
+      {% if page.permalink != '/' %}
+        <a class="navbar-brand title font-weight-lighter" href="{{ '/' | relative_url }}#home">
+          {% if site.title == 'blank' %}
+            {% if site.first_name %}<span class="font-weight-bold">{{ site.first_name }}</span>{% endif %}
+            {% if site.middle_name %}{{ site.middle_name }}{% endif %}
+            {% if site.last_name %}{{ site.last_name }}{% endif %}
+          {% else %}
+            {{ site.title }}
+          {% endif %}
+        </a>
+      {% elsif site.enable_navbar_social %}
+        <div class="navbar-brand social">{% social_links %}</div>
+      {% endif %}
+
+      <button
+        class="navbar-toggler collapsed navbar-toggler-main"
+        type="button"
+        data-nav-toggle="navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+
+      <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav">
+        <ul class="navbar-nav navbar-menu-list flex-nowrap">
+          <li class="nav-item"><a class="nav-link single-page-nav-link" href="{{ '/' | relative_url }}#home" data-section="home">Home</a></li>
+          <li class="nav-item"><a class="nav-link single-page-nav-link" href="{{ '/' | relative_url }}#news" data-section="news">News</a></li>
+          <li class="nav-item"><a class="nav-link single-page-nav-link" href="{{ '/' | relative_url }}#experience" data-section="experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link single-page-nav-link" href="{{ '/' | relative_url }}#education" data-section="education">Education</a></li>
+          <li class="nav-item"><a class="nav-link single-page-nav-link" href="{{ '/' | relative_url }}#research" data-section="research">Research</a></li>
+          <li class="nav-item"><a class="nav-link single-page-nav-link" href="{{ '/' | relative_url }}#services" data-section="services">Services</a></li>
+
+          {% if site.search_enabled %}
+            <li class="nav-item">
+              <button id="search-toggle" type="button" title="Search" aria-label="Open search">
+                <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span>
+              </button>
+            </li>
+          {% endif %}
+
+          {% if site.enable_darkmode %}
+            <li class="toggle-container">
+              <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme">
+                <i class="fa-half-sun-moon" id="light-toggle-system"></i>
+                <i class="fa-solid fa-moon" id="light-toggle-dark"></i>
+                <i class="fa-solid fa-sun" id="light-toggle-light"></i>
+              </button>
+            </li>
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  {% if site.enable_progressbar %}
+    <progress id="progress" value="0">
+      <div class="progress-container"><span class="progress-bar"></span></div>
+    </progress>
+  {% endif %}
+</header>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const links = document.querySelectorAll('.single-page-nav-link');
+    const sections = Array.from(links)
+      .map(function (link) {
+        return document.getElementById(link.dataset.section);
+      })
+      .filter(Boolean);
+
+    function setActive(sectionId) {
+      links.forEach(function (link) {
+        const isActive = link.dataset.section === sectionId;
+        link.parentElement.classList.toggle('active', isActive);
+        if (isActive) {
+          link.setAttribute('aria-current', 'page');
+        } else {
+          link.removeAttribute('aria-current');
+        }
+      });
+    }
+
+    if (sections.length) {
+      const observer = new IntersectionObserver(
+        function (entries) {
+          const visible = entries
+            .filter(function (entry) { return entry.isIntersecting; })
+            .sort(function (a, b) { return b.intersectionRatio - a.intersectionRatio; });
+          if (visible.length) setActive(visible[0].target.id);
+        },
+        { rootMargin: '-20% 0px -65% 0px', threshold: [0, 0.1, 0.5] }
+      );
+      sections.forEach(function (section) { observer.observe(section); });
+      setActive(window.location.hash.slice(1) || 'home');
+    }
+  });
+</script>
