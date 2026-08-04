@@ -86,6 +86,7 @@ My research interests lie in **AR generative models** for video generation and *
       <div class="entry-meta">Sep. 2023 - Present<br>Hong Kong, China</div>
     </div>
     <div class="entry-subtitle">Ph.D. in MMLAB (Information Engineering)</div>
+    <div class="entry-description"><strong>Honor:</strong> Hunyuan Scholarship</div>
     <div class="entry-description">Supervisor: <a href="http://people.eecs.berkeley.edu/~xyyue/">Prof. Xiangyu Yue</a></div>
     <div class="entry-description"><strong>Research Topics:</strong> Multi-modal Learning, Generative Models</div>
   </div>
