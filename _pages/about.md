@@ -4,15 +4,12 @@ title: home
 permalink: /
 nav: true
 nav_order: 1
-subtitle: <a href='https://www.cuhk.edu.hk/'>CUHK</a> MMLab. Hong Kong.
+subtitle: <span class='subtitle-accent'>Ph.D. Candidate @ <a href='https://www.cuhk.edu.hk/'>CUHK MMLab</a> · Tencent Hunyuan</span>
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false
-  more_info: >
-    <p>MMLab, The Chinese University of Hong Kong</p>
-    <p>Hong Kong</p>
 
 selected_papers: false
 social: true
@@ -28,9 +25,15 @@ latest_posts:
 
 <div id="home" class="single-page-anchor"></div>
 
-I am a Ph.D. student at <a href='https://mmlab.ie.cuhk.edu.hk/'>MMLab</a>, The Chinese University of Hong Kong, advised by <a href='http://people.eecs.berkeley.edu/~xyyue/'>Prof. Xiangyu Yue</a>. Before this, I worked with <a href='https://shuangli.xyz'>Prof. Shuang Li</a> and <a href='https://cs.bit.edu.cn/szdw/jsml/gjjgccrc/lc_1065cf35e06845a7a667945726df0886/index.htm'>Prof. Chi Harold Liu</a> at Beijing Institute of Technology.
-
-My research interests lie in **AR generative models** for video generation and **multi-modal language models**. I am always open to discussion and collaboration — feel free to drop me an email.
+<div class="home-intro">
+  <p>I am a fourth-year Ph.D. student at <a href="https://mmlab.ie.cuhk.edu.hk/">MMLab</a>, The Chinese University of Hong Kong, advised by <a href="http://people.eecs.berkeley.edu/~xyyue/">Prof. Xiangyu Yue</a>.</p>
+  <p>I am currently working with the pre-training team at <strong>Tencent Hunyuan</strong>, where I contribute to building the <strong>Hunyuan Video</strong> and <strong>Hunyuan Image</strong> series of models.</p>
+  <p>My research goal is to develop <strong>simple, scalable, and systematic</strong> approaches for generative and multimodal models.</p>
+  <div class="job-market-note">
+    <span class="job-market-label">2027 Job Market</span>
+    <span>I will be on the 2027 job market. Please feel free to <a href="mailto:kaixionggong@gmail.com">contact me</a> to discuss potential opportunities.</span>
+  </div>
+</div>
 
 <section id="news" class="home-section">
   <h2 class="home-section-title"><i class="fa-solid fa-newspaper home-section-icon"></i> News</h2>
@@ -47,7 +50,7 @@ My research interests lie in **AR generative models** for video generation and *
     </div>
     <div class="entry-subtitle">Research Intern</div>
     <div class="entry-description">Mentors: Jian-Wei Zhang and Miles Yang</div>
-    <div class="entry-description"><strong>Research Topics:</strong> Unified Understanding and Generation, Video Generation</div>
+    <div class="entry-description"><strong>Working on:</strong> Video generation pre-training, VAE development, data scaling, and unified understanding and generation</div>
     <div class="entry-description"><strong>Core Contribution:</strong> Hunyuan Video</div>
     <div class="entry-description"><strong>Contribution:</strong> Hunyuan Image</div>
   </div>
@@ -159,6 +162,49 @@ My research interests lie in **AR generative models** for video generation and *
     height: 1px;
   }
 
+  .subtitle-accent,
+  .subtitle-accent a {
+    color: var(--global-theme-color) !important;
+    font-weight: 600;
+  }
+
+  .home-intro {
+    color: var(--global-text-color);
+    font-size: 1.1rem;
+    line-height: 1.75;
+  }
+
+  .home-intro p {
+    margin-bottom: 1rem;
+  }
+
+  .job-market-note {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    margin-top: 1.25rem;
+    padding: 0.9rem 1rem;
+    border: 1px solid rgba(42, 138, 138, 0.28);
+    border-left: 4px solid var(--global-theme-color);
+    border-radius: 0.65rem;
+    background: rgba(42, 138, 138, 0.07);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+
+  .job-market-label {
+    flex-shrink: 0;
+    padding: 0.2rem 0.55rem;
+    border-radius: 999px;
+    background: var(--global-theme-color);
+    color: #fff;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
   .home-section {
     clear: both;
     padding-top: 3rem;
@@ -249,6 +295,12 @@ My research interests lie in **AR generative models** for video generation and *
   @media (max-width: 576px) {
     .home-section {
       padding-top: 2.5rem;
+    }
+
+    .job-market-note {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 0.55rem;
     }
 
     .entry-row {

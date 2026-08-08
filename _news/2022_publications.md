@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-**2022:** *Improving Transferability for Domain Adaptive Detection Transformers* was accepted to **ACM Multimedia 2022**.
+**2022:** One paper was accepted to **ACM Multimedia 2022**.
